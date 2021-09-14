@@ -12,7 +12,7 @@ db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
-    update_channel = "@kurupp_dq"
+    update_channel = "@CineGramamOfficial"
     if update_channel:
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
@@ -24,7 +24,7 @@ async def start(bot, update):
             await update.reply_text(
                 text="<b>🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭\n\nനിങ്ങൾക് സിനിമകൾ വെന്നോ? അതിനായി അത്യം ങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യണം... 😁\n\nJoin ചെയതത്തിനു ശേഷം വീണ്ടും ബോട്ട് /start ആക്കൂ.😁</b>",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text=" 🔰JOIN OUR CHANNEL🔰 ", url=f"https://t.me/kurupp_dq")]
+                    [ InlineKeyboardButton(text=" 🔰JOIN OUR CHANNEL🔰 ", url=f"https://t.me/CineGramamOfficial")]
               ])
             )
             return
@@ -55,7 +55,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '⚠️ 𝗝𝗢𝗜𝗡 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ⚠️', url="https://t.me/joinchat/s3MC2Q0hHVw0Y2U9"
+                                    '⚠️ 𝗝𝗢𝗜𝗡 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ⚠️', url="https://t.me/CineGramamOfficial"
                                 )
                         ]
                     ]
@@ -74,7 +74,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '⚠️ 𝗝𝗢𝗜𝗡 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ⚠️', url="https://t.me/joinchat/s3MC2Q0hHVw0Y2U9"
+                                    '⚠️ 𝗝𝗢𝗜𝗡 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ⚠️', url="https://t.me/CineGramamOfficial"
                                 )
                         ]
                     ]
@@ -93,7 +93,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '⚠️ 𝗝𝗢𝗜𝗡 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ⚠️', url="https://t.me/joinchat/s3MC2Q0hHVw0Y2U9"
+                                    '⚠️ 𝗝𝗢𝗜𝗡 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ⚠️', url="https://t.me/CineGramamOfficial"
                                 )
                         ]
                     ]
@@ -106,8 +106,8 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('⚠️ JOIN', url='https://t.me/joinchat/s3MC2Q0hHVw0Y2U9'),
-        InlineKeyboardButton('🕵‍♂ CREATOR', url ='https://t.me/cinehut')
+        InlineKeyboardButton('⚠️ JOIN', url='https://t.me/CineGramamOfficial'),
+        InlineKeyboardButton('🕵‍♂ CREATOR', url ='https://t.me/Silentkilleroff')
     ],[
         InlineKeyboardButton('💡 HELP', callback_data="help"),
         InlineKeyboardButton('🔐 CLOSE', callback_data="close")
@@ -139,7 +139,7 @@ async def help(bot, update):
     
     await bot.send_photo(
         chat_id=update.chat.id,
-        photo="https://telegra.ph/file/0a8a85ea0753bcafbde8b.jpg",
+        photo="https://telegra.ph/file/dc944ab01903013b6e1e3.jpg",
         caption=Translation.HELP_TEXT,
         reply_markup=reply_markup,
         parse_mode="html",
